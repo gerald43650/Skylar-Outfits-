@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skylar Outfits</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+}
+
+header{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.hero{
+    background:url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1200') center/cover;
+    height:80vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-content{
+    background:rgba(0,0,0,0.6);
+    padding:30px;
+    border-radius:10px;
+    color:white;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.hero p{
+    margin-bottom:20px;
+    font-size:1.2rem;
+}
+
+.btn{
+    display:inline-block;
+    background:#ff9800;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#e68900;
+}
+
+.section-title{
+    text-align:center;
+    margin:40px 0 20px;
+    font-size:2rem;
+}
+
+.products{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    padding:20px;
+}
+
+.product{
+    background:white;
+    width:300px;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.product:hover{
+    transform:translateY(-5px);
+}
+
+.product img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+.product-info{
+    padding:15px;
+    text-align:center;
+}
+
+.product-info h2{
+    color:#ff9800;
+    margin:10px 0;
+}
+
+.contact{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+.whatsapp-btn{
+    display:inline-block;
+    margin-top:20px;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    padding:15px 25px;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+footer{
+    background:#000;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+@media(max-width:768px){
+    .hero h1{
+        font-size:2rem;
+    }
+
+    .product{
+        width:90%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>SKYLAR OUTFITS</h1>
+    <p>Your Style, Your Confidence</p>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Dress With Confidence</h1>
+        <p>Discover trendy and affordable fashion in Tanzania.</p>
+        <a href="#products" class="btn">Shop Now</a>
+    </div>
+</section>
+
+<h2 class="section-title" id="products">Featured Products</h2>
+
+<section class="products">
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800" alt="T-Shirt">
+        <div class="product-info">
+            <h3>Premium T-Shirt</h3>
+            <p>Comfortable and stylish everyday wear.</p>
+            <h2>TZS 25,000</h2>
+
+            <a class="btn"
+            href="https://wa.me/255756571666?text=Hello%20Skylar%20Outfits,%20I%20want%20to%20buy%20the%20Premium%20T-Shirt"
+            target="_blank">
+            Order Now
+            </a>
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=800" alt="Jeans">
+        <div class="product-info">
+            <h3>Fashion Jeans</h3>
+            <p>Premium quality modern-fit jeans.</p>
+            <h2>TZS 45,000</h2>
+
+            <a class="btn"
+            href="https://wa.me/255756571666?text=Hello%20Skylar%20Outfits,%20I%20want%20to%20buy%20the%20Fashion%20Jeans"
+            target="_blank">
+            Order Now
+            </a>
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=800" alt="Dress">
+        <div class="product-info">
+            <h3>Elegant Dress</h3>
+            <p>Perfect for weddings and special occasions.</p>
+            <h2>TZS 60,000</h2>
+
+            <a class="btn"
+            href="https://wa.me/255756571666?text=Hello%20Skylar%20Outfits,%20I%20want%20to%20buy%20the%20Elegant%20Dress"
+            target="_blank">
+            Order Now
+            </a>
+        </div>
+    </div>
+
+</section>
+
+<section class="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Phone:</strong> 0756 571 666</p>
+    <p><strong>WhatsApp:</strong> 0756 571 666</p>
+    <p><strong>Email:</strong> skylaroutfits@gmail.com</p>
+
+    <a class="whatsapp-btn"
+    href="https://wa.me/255756571666?text=Hello%20Skylar%20Outfits,%20I%20am%20interested%20in%20your%20fashion%20products"
+    target="_blank">
+    Chat on WhatsApp
+    </a>
+</section>
+
+<footer>
+    <p>© 2026 Skylar Outfits. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
